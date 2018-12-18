@@ -87,10 +87,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/index.js!./src/components/hello/styles.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader!./src/components/hello/styles.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -99,7 +99,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "p {\n    color: blueviolet;\n}", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -583,6 +583,36 @@ process.umask = function() { return 0; };
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/vue-loader/lib??vue-loader-options!./panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -1165,6 +1195,278 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (this && this.clearImmediate);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./src/components/panel/panel.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "panel",
+    props: {
+        dialog: {
+            type:Object,
+            required: true,
+        },
+        title:{
+            type: String,
+            default: "Hello, world"
+        },
+        columns: {
+            type: Number,
+            default: 1,
+        },
+        cells: {
+            type: Number,
+            default: 1,
+        }
+    },
+    data: function () {
+
+        return {
+            numColumns:this.columns,
+            numCells:this.cells
+        }
+    },
+
+    methods: {
+        cancelFunction: function () {
+            this.dialog.close();
+            this.$emit("close",null);
+
+        },
+        closeFunction: function() {
+            this.dialog.close();
+            this.$emit("close",{numColumns:this.numColumns, numCells: this.numCells});
+        }
+    }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=template&id=2c9bf04e&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/panel/panel.vue?vue&type=template&id=2c9bf04e&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("form", { staticStyle: { width: "300px" } }, [
+    _c("header", [_c("h1", [_vm._v(_vm._s(_vm.title))])]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("label", [
+        _c("span", [_vm._v("列数")]),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.numColumns,
+              expression: "numColumns"
+            }
+          ],
+          domProps: { value: _vm.numColumns },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.numColumns = $event.target.value
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("label", [
+        _c("span", [_vm._v("セル数")]),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.numCells,
+              expression: "numCells"
+            }
+          ],
+          domProps: { value: _vm.numCells },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.numCells = $event.target.value
+            }
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("footer", [
+      _c(
+        "button",
+        {
+          attrs: { type: "button", "uxp-variant": "secondary" },
+          on: { click: _vm.cancelFunction }
+        },
+        [_vm._v("キャンセル")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          attrs: { type: "submit", "uxp-variant": "primary" },
+          on: { click: _vm.closeFunction }
+        },
+        [_vm._v("決定")]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
 
 /***/ }),
 
@@ -9232,33 +9534,90 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/components/hello/styles.css":
-/*!*****************************************!*\
-  !*** ./src/components/hello/styles.css ***!
-  \*****************************************/
+/***/ "./src/components/panel/panel.vue":
+/*!****************************************!*\
+  !*** ./src/components/panel/panel.vue ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _panel_vue_vue_type_template_id_2c9bf04e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./panel.vue?vue&type=template&id=2c9bf04e&scoped=true& */ "./src/components/panel/panel.vue?vue&type=template&id=2c9bf04e&scoped=true&");
+/* harmony import */ var _panel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./panel.vue?vue&type=script&lang=js& */ "./src/components/panel/panel.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _panel_vue_vue_type_style_index_0_id_2c9bf04e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css& */ "./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _panel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _panel_vue_vue_type_template_id_2c9bf04e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _panel_vue_vue_type_template_id_2c9bf04e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "2c9bf04e",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/panel/panel.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/panel/panel.vue?vue&type=script&lang=js&":
+/*!*****************************************************************!*\
+  !*** ./src/components/panel/panel.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib??vue-loader-options!./panel.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css&":
+/*!*************************************************************************************************!*\
+  !*** ./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css& ***!
+  \*************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_style_index_0_id_2c9bf04e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/vue-loader/lib??vue-loader-options!./panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=style&index=0&id=2c9bf04e&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_style_index_0_id_2c9bf04e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_style_index_0_id_2c9bf04e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_style_index_0_id_2c9bf04e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_style_index_0_id_2c9bf04e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_style_index_0_id_2c9bf04e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/panel/panel.vue?vue&type=template&id=2c9bf04e&scoped=true&":
+/*!***********************************************************************************!*\
+  !*** ./src/components/panel/panel.vue?vue&type=template&id=2c9bf04e&scoped=true& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_template_id_2c9bf04e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./panel.vue?vue&type=template&id=2c9bf04e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/panel/panel.vue?vue&type=template&id=2c9bf04e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_template_id_2c9bf04e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_panel_vue_vue_type_template_id_2c9bf04e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!./styles.css */ "./node_modules/css-loader/index.js!./src/components/hello/styles.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
 
 /***/ }),
 
@@ -9270,39 +9629,174 @@ if(false) {}
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {//  temporary stubs required for Vue. These will not be required as soon as the XD environment provides setTimeout/clearTimeout
-global.setTimeout = function (fn) { fn() }
-global.clearTimeout = function () { };
+global.setTimeout = function (fn) {
+    fn()
+};
+global.clearTimeout = function () {
+};
 
-const styles = __webpack_require__(/*! ./components/hello/styles.css */ "./src/components/hello/styles.css");
 const Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js").default;
-const hello = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './components/hello/hellow.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())).default
+// const styles = require("@/components/hello/styles.css");
+const panel = __webpack_require__(/*! @/components/panel/panel */ "./src/components/panel/panel.vue").default;
 
-const { Text, Color } = __webpack_require__(/*! scenegraph */ "scenegraph");
+const {Path, Color, Group,RepeatGrid} = __webpack_require__(/*! scenegraph */ "scenegraph");
+const commands = __webpack_require__(/*! commands */ "commands");
+// const {error} = require("./libs/dialogs.js");
 
 let dialog;
-function getDialog() {
+let orgCells;
+let orgColumns;
+
+function getDialog(grid) {
+    const {selection, root} = __webpack_require__(/*! scenegraph */ "scenegraph");
     if (dialog == null) {
-        document.body.innerHTML = `<dialog><div id="container"></div></dialog>`
+        document.body.innerHTML = `<dialog><div id="container">test</div></dialog>`;
         dialog = document.querySelector("dialog");
-        var app4 = new Vue({
-            el: "#container",
-            components: { hello },
-            render(h) {
-                return h(hello, { props: { dialog } })
+        new Vue(
+            {
+                el: "#container",
+                components: {
+                    panel
+                },
+                render(h) {
+                    return h(panel, {props:{dialog,title:"Hello from vue!",columns:grid.numColumns, cells:grid.numColumns*grid.numRows},on:{close:this.closeFunc}});
+                },
+                methods:{
+                    closeFunc:function(value){
+                        console.log(value);
+                        if (value) {
+                            let currentCol = value.numColumns;
+                            let currentRow = Math.ceil(value.numCells / value.numColumns);
+
+                            fitSizeGird(grid, currentCol, currentRow);
+                            console.log("need set" + currentRow  + "/" + (currentRow * currentCol) + "/" + value.numCells);
+                            if (currentRow>1 && currentRow*currentCol>value.numCells) {
+                                setMask(selection, grid, currentCol, value.numCells);
+                            }
+
+
+                        }
+                    }
+
+                }
             }
-        })
+        );
+        // const app = new Vue({
+        //     el: "#container",
+        //     components: { hello },
+        //     render(h) {
+        //         return h(hello, { props: { dialog } })
+        //     }
+        // })
     }
-    return dialog
+    return dialog;
 }
+
+
+async function mainFunction() {
+    const {selection, root} = __webpack_require__(/*! scenegraph */ "scenegraph");
+    // find RepeatGrids
+    const grids = findRepeatGrid(selection);
+    if (grids.length===0) {
+        console.log("no Repeat Grid");
+        // error("リピートグリッドを選択してください。");
+        return;
+    } else if(grids.length>1) {
+        console.log("you can only 1 repeat grid");
+    }
+    getDialog(grids[0], selection);
+    await dialog.showModal();
+    // let elemNumColums, elemNumItems, elemNumRows,elemIndexGrid;
+    // elemIndexGrid = dialog.querySelector("#indexGrid");
+    // elemNumColums = dialog.querySelector("#settingColumns");
+    // elemNumItems = dialog.querySelector("#settingItems");
+    // elemNumRows = dialog.querySelector("#settingRows")
+    // for (let i=0;i<grids.length;i++){
+    //     let grid = grids[i];
+    //     selection.items = [grid];
+    //     elemIndexGrid.innerHTML = (i+1) + "/" + (grids.length);
+    //     elemNumColums.value = grid.numColumns;
+    //     elemNumRows.value = grid.numRows;
+    //     elemNumItems.value = grid.numRows * grid.numColumns;
+    //
+    //     await dialog.showModal();
+    //     return;
+    //
+    // }
+
+}
+function fitSizeGird(rg, columns, rows) {
+    console.log("fitSizeGrid");
+    if (!columns) columns = rg.numColumns;
+    if (!rows) rows = rg.numRows;
+    rg.width = rg.cellSize.width * columns + rg.paddingX*(columns-1);
+    // const newRows =  Math.ceil(length/columns);
+    rg.height = rg.cellSize.height * rows + rg.paddingY*(rows-1);
+
+}
+function setMask(rg, columns,length) {
+    const {selection, root} = __webpack_require__(/*! scenegraph */ "scenegraph");
+    selection.items = [rg];
+    const maskPath = new Path();
+    selection.insertionParent.addChild(maskPath);
+    const basePoint = {x:rg.boundsInParent.x, y:rg.boundsInParent.y};
+    basePoint.right = basePoint.x + rg.width;
+    basePoint.bottom = basePoint.y + rg.height;
+    const exceptRect = {};
+    const exceptCell = columns - (length % columns);
+    exceptRect.right = basePoint.right;
+    exceptRect.bottom = basePoint.bottom;
+    exceptRect.y = exceptRect.bottom - rg.cellSize.height - rg.paddingY;
+    exceptRect.x = exceptRect.right - (rg.cellSize.width*exceptCell + rg.paddingX*exceptCell);
+    const start = "M"+basePoint.x + " " + basePoint.y;
+    const end = " L"+basePoint.x + " " + basePoint.y;
+    let path = " H " + basePoint.right
+        + " V " + exceptRect.y
+        + " H " + exceptRect.x
+        + " V " + exceptRect.bottom
+        + " H " + basePoint.x;
+    console.log(path);
+    maskPath.pathData = start + path + end;
+    maskPath.fill = new Color("#666");
+
+    selection.items = [rg, maskPath];
+    commands.createMaskGroup();
+}
+function findRepeatGrid(selection) {
+    const result = [];
+    for(let i=0;i<selection.items.length;i++) {
+        console.log(selection.items[i].constructor.name);
+        if (selection.items[i] instanceof RepeatGrid) {
+            result.push(selection.items[i]);
+        }
+    }
+    return result;
+}
+
+
 
 module.exports = {
     commands: {
-        menuCommand: function () {
-            getDialog().showModal();
-        }
+        menuCommand: mainFunction
+        // menuCommand: function () {
+        //     // getDialog().showModal();
+        //     // mainFunction
+        // }
     }
 };
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "commands":
+/*!***************************!*\
+  !*** external "commands" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("commands");
 
 /***/ }),
 

@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "npm run clean && npm run watch:*",
+    "start": "npm run clean && npm run copy:manifest && npm-run-all watch:*",
     "watch:webpcack": "nodemon -w src -e js,vue,css -w webpack.config.js -x yarn build",
-    "build": "npm run clean && webpack --mode development && copy:* && xdpm install ./dist",
-    "watch:plugin": "xdpm watch ./dist",
+    "build": "webpack --mode development",
+    "plugin-install": "xdpm install ./dist",
     "clean": "rimraf ./dist",
+    "watch": "npm-run-all -p watch:*",
+    "watch:plugin": "xdpm watch ./dist",
     "watch:manifest": "cpx ./manifest.json ./dist --watch",
     "copy:manifest": "cpx ./manifest.json ./dist"
   },
@@ -15,6 +17,8 @@
   "private": true,
   "devDependencies": {
     "cpx": "^1.5.0",
+    "nodemon": "^1.18.7",
+    "npm-run-all": "^4.1.5",
     "vue-loader": "^15.2.6",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
